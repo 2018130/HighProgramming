@@ -49,7 +49,7 @@ jQuary의 배경이미지를 변경하기 위해 위 코드를 사용했습니�
 
 
 
-[깃허브 링크](https://github.com/2018130/HighProgramming/tree/main/www)
+[깃허브 링크](https://github.com/2018130/HighProgramming/tree/main/proj01)
 
 
 
@@ -90,4 +90,4 @@ jQuary의 배경이미지를 변경하기 위해 위 코드를 사용했습니�
 
 
 
-[깃허브 링크](https://github.com/2018130/HighProgramming/tree/main/www)
+[깃허브 링크](https://github.com/2018130/HighProgramming/tree/main/proj02)
