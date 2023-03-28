@@ -42,5 +42,8 @@ jQuary의 배경이미지를 변경하기 위해 위 코드를 사용했습니�
 안드로이드 스튜디오, 코르도바, vsCode 및 node.js
 2. 개발 장치정보
 ![usingWare](https://user-images.githubusercontent.com/35947698/228160573-805c533b-e6bc-4173-94c3-98420c51c2dc.png)
-[깃허브 위치](https://github.com/2018130/HighProgramming/tree/main/www)
+[깃허브 링크](https://github.com/2018130/HighProgramming/tree/main/www)
+
+
+
 ### P01-2 자신이 소개하고 싶은 곳 앱
