@@ -7,7 +7,7 @@
 
 
 사진
-![Alt text](/path/to/img.jpg)
+![Alt text](https://github.com/2018130/HighProgramming/issues/1#issue-1643301314)
 ![Alt text](/path/to/img.jpg)
 ![Alt text](/path/to/img.jpg)
 ![Alt text](/path/to/img.jpg)
