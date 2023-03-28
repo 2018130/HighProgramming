@@ -4,8 +4,16 @@
 코르도바를 사용한 하이브리드 앱 코딩하기
 
 ### P01-1자신의 포트폴리오 앱
-
-
+소스코드
+<pre><code>{
+    <style>
+        .header {
+            background-image: url("./bg.jpg");
+        }
+    </style>
+    }</code></pre>
+jQuary의 배경이미지를 변경하기 위해 위 코드를 사용했습니다.
+    
 사진
 
 
