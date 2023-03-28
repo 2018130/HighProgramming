@@ -11,8 +11,7 @@
             background-image: url("./bg.jpg");
         }
     </style>
-    }
-</code></pre>
+}</code></pre>
 jQuary의 배경이미지를 변경하기 위해 위 코드를 사용했습니다.
     
 사진
