@@ -1,223 +1,141 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE HTML>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML5 개인 포트폴리오 홈페이지</title>
-    <style>
-        .header {
-            background-image: url("./bg.jpg");
-        }
-
-        ul {
-            list-style: none;
-        }
-    </style>
-    <script>
-        /*
-        $(document).ready(function () {
-            $('a[href^="http://"]').each(function () {
-                var oldUrl = $(this).attr("href"); // Get current url
-                var newUrl = oldUrl.replace("http://", "https://"); // Create new url
-                $(this).attr("href", newUrl); // Set herf value
-            });
-        });*/
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<script>
+		$("#body").load(url, function () {
+				$(this).trigger('create')
+			});
     </script>
-
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css"/>
+	<script src="./js/jquery-1.11.1.min.js"></script>
+	<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
 </head>
 
 <body>
-    <div data-role="page" id="h1">
-        <div data-role="header" data-theme="b" class="header">
-            <h1>송준엽 홈페이지</h1>
-        </div>
-        <div data-role="content" style="text-align:center">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#h1" class="ui-btn-active">경력</a></li>
-                    <li><a href="#h2">학술</a></li>
-                    <li><a href="#h3">인적</a></li>
-                    <li><a href="#h4">소개</a></li>
-                </ul>
-            </div>
-            <section class="section1">
-                <h3>게임 프로젝트</h3>
-                <ul>
-                    <li>2022-11-28~ 최초 개발 시작</li>
-                    <li>2023-02-04~ 구글 드라이브 문서 작성 시작</li>
-                </ul>
-                <div id="pic-container">
-                    <img id="pic1" style="width:300px; height:400px;" class="semi-pic" src="gameMainScreen.jpg" />
-                    <img id="pic2" style="width:400px; height:300px;" class="semi-pic" src="googleDrive.png" />
-                </div>
-                <h3>봉사</h3>
-                <ul>
-                    <li>2023-03-17 홀로 어르신 댁 방문 후 폼롤러 사용법 안내</li>
-                </ul>
-            </section>
-            <h3>참조링크</h3>
-            <a href="http://www.google.com">
-                <img class="portal" src="naver.jpg" alt="네이버이동" />
-            </a>
-            <a href="http://www.google.com">
-                <img class="portal" src="google.jpg" alt="구글이동" />
-            </a>
-            <a href="http://www.daum.net">
-                <img class="portal" src="daum.jpg" alt="다음이동" />
-            </a>
-        </div>
-        <div data-role="footer" data-position="fixed" data-theme="b">
-            <h1></h1>
-        </div>
-    </div>
-    <div data-role="page" id="h2">
-        <div data-role="header" data-theme="b" class="header">
-            <h1>송준엽 홈페이지</h1>
-        </div>
-        <div data-role="content" style="text-align:center">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#h1">경력</a></li>
-                    <li><a href="#h2" class="ui-btn-active">학술</a></li>
-                    <li><a href="#h3">인적</a></li>
-                    <li><a href="#h4">소개</a></li>
-                </ul>
-            </div>
-            <div id="mainContents">
-                <h3>게임 프로젝트</h3>
-                <ul>
-                    <li>플레이 영상</li>
-                </ul>
-                <video height="180" width="288" autoplay controls preload="metadata">
-                    <source src="video.ogv" type="video/ogv">
-                    </source>
-                    <source src="video.mp4" type="video/mp4">
-                    </source>
-                    <source src="video.webm" type="video/webm">
-                    </source>
-                    브라우저에서 비디오 파일을 지원하지 않습니다.
-                    <br />
-                </video>
-            </div>
-            <h3>참조링크</h3>
-            <a href="http://www.google.com">
-                <img class="portal" src="naver.jpg" alt="네이버이동" />
-            </a>
-            <a href="http://www.google.com">
-                <img class="portal" src="google.jpg" alt="구글이동" />
-            </a>
-            <a href="http://www.daum.net">
-                <img class="portal" src="daum.jpg" alt="다음이동" />
-            </a>
-        </div>
-        <div data-role="footer" data-position="fixed" data-theme="b">
-            <h1></h1>
-        </div>
-    </div>
-    <div data-role="page" id="h3">
-        <div data-role="header" data-theme="b" class="header">
-            <h1>송준엽 홈페이지</h1>
-        </div>
-        <div data-role="content" style="text-align:center">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#h1">경력</a></li>
-                    <li><a href="#h2">학술</a></li>
-                    <li><a href="#h3" class="ui-btn-active">인적</a></li>
-                    <li><a href="#h4">소개</a></li>
-                </ul>
-            </div>
-            <section class="section1">
-                <h3>인적사항</h3>
-                <ul>
-                    <li>성 명 : 송준엽</li>
-                    <li>생년월일 : 2000. 02. 16</li>
-                    <li>주 소 : 부산시 동구 초량동</li>
-                    <li>연 락 처 : 010-6676-2016</li>
-                    <li>
-                        학 력
-                        <table id="year-table" border="1">
-                            <thead>
-                                <tr>
-                                    <th>졸업년도</th>
-                                    <th>출신학교</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>2012. 2</td>
-                                    <td> 동일중앙초등학교 졸업</td>
-                                </tr>
-                                <tr>
-                                    <td>2015. 2.</td>
-                                    <td> 부산중학교 졸업</td>
-                                </tr>
-                                <tr>
-                                    <td>2018. 2.</td>
-                                    <td> 부산고등학교 졸업</td>
-                                </tr>
-                                <tr>
-                                    <td>2018. 3.</td>
-                                    <td> 경성대학교 컴퓨터학과 입학</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </li>
-                </ul>
-            </section>
-        </div>
-        <h3>참조링크</h3>
-        <a href="http://www.google.com">
-            <img class="portal" src="naver.jpg" alt="네이버이동" />
-        </a>
-        <a href="http://www.google.com">
-            <img class="portal" src="google.jpg" alt="구글이동" />
-        </a>
-        <a href="http://www.daum.net">
-            <img class="portal" src="daum.jpg" alt="다음이동" />
-        </a>
-    </div>
-    <div data-role="page" id="h4">
-        <div data-role="header" data-theme="b" class="header">
-            <h1>송준엽 홈페이지</h1>
-        </div>
-        <div data-role="content" style="text-align:center">
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#h1">경력</a></li>
-                    <li><a href="#h2">학술</a></li>
-                    <li><a href="#h3">인적</a></li>
-                    <li><a href="#h4" class="ui-btn-active">소개</a></li>
-                </ul>
-            </div>
-            <h3>자기소개</h3>
-            <img id="stu-pic" src="stu.jpg" />
-            <p>
-                저는 경성대학교 소프트웨어학과를 졸업하고 게임 관련 분야에 관심을 갖고 있는 송준엽입니다. 평소 프로그래밍을 즐겨하였고 특히, 게임엔진 관련하여
-                유니티 및 언리얼 엔진을 이용한 개발 경험도 있습니다. 모바일 게임 관련 빌드 및 구동 경험이 있습니다. 항상 어떤 환경에서도 최선을 다하고 즐기는 마음으로 열심히 일하고자 합니다.
-            </p>
-            <h3>참조링크</h3>
-            <a href="http://www.google.com">
-                <img class="portal" src="naver.jpg" alt="네이버이동" />
-            </a>
-            <a href="http://www.google.com">
-                <img class="portal" src="google.jpg" alt="구글이동" />
-            </a>
-            <a href="http://www.daum.net">
-                <img class="portal" src="daum.jpg" alt="다음이동" />
-            </a>
-        </div>
-        <div data-role="footer" data-position="fixed" data-theme="b">
-            <h1></h1>
-        </div>
-    </div>
-    <footer>
-        <h2>Copyright &copy; 2014 Hong, GilDong </h2>
-    </footer>
-</body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>부산 소개 앱</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="bgbusan1.jpeg" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">부산소개</a></li>
+				<li><a href="#movie" data-rel="dialog">부산영상</a></li>
+				<li><a href="#wizard3-1" data-rel="dialog">부산음악</a></li>
+				<li><a href="#gallery">부산사진</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>부산사랑_송준엽</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>부산 소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="bgbusan2.jpeg">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>부산역사</h3>
+					<p>부산광역시(釜山廣域市)는 대한민국 제 2의 도시로, 현재의 규모와 명성을 갖추게 된 것은 비교적 최근의 일이다. 삼한 시대 변한의 거칠산국의 작은 고을로 시작하여  ..생략</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>부산지리</h3>
+					<p>부산광역시는 동쪽으로는 동해에 접하고 서쪽으로 경상남도 창원시 진해구, 김해시와 접하고 있으며, 남쪽으로는 거제시와 남해에 접하며 북쪽으로 울산  ..생략</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>부산정보</h3>
+					<p>대한민국의 광역시. 한국 최대의 항구를 보유하고 있고 전국에서 2번째로 인구가 많다. 인구는 3,316,107명[17]으로 모든 광역시 중 외국인을 제외해도 유일한 300만 명대 도시이다. 모든 광역자치단체를 다
+					합치면 경기도-서울특별시 다음 3위. 광역자치단체들 중 인구 밀도도 서울에 이어 2위이다  ..생략</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>부산사랑_송준엽</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>부산 영상</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-a">부산 소개 동영상</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/pRy1_vBeQmY"></iframe></li><br/>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+	
+	<div data-role="page" id="wizard3-1">
+		<div data-role="header">
+			<h1>부산 노래1</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">부산 바캉스</div><br/>
+			<audio controls width="100%" preload="metadata">
+				<source src="busanVacance.mp3" type="audio/mp3">
+			</audio>	
+			<img src="3_1.jpeg" alt="" width="100%">
+		</div>
+		<div data-role="footer">
+			<a href="#home"  data-direction="reverse">이전</a>
+			<a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+		</div>
+	</div>
 
+	<div data-role="page" id="wizard3-2">
+		<div data-role="header">
+			<h1>부산 노래2</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">해운대</div><br/>
+			<audio controls width="100%" preload="metadata">
+				<source src="haeundae.mp3" type="audio/mp3">
+			</audio>			
+			<img src="3_2.jpeg" alt="" width="100%">
+		</div>
+		<div data-role="footer">
+			<a href="#wizard3-1"  data-direction="reverse">이전</a>
+			<a href="#home">처음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>부산 갤러리</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="4-1.jpg" rel="external"><img src="4_1.jpeg" /></a></li>	
+				<li><a href="4-2.jpg" rel="external"><img src="4_2.jpeg" /></a></li>	
+				<li><a href="4-3.jpg" rel="external"><img src="4_3.jpeg" /></a></li>	
+				<li><a href="4-4.jpg" rel="external"><img src="4_4.jpeg" /></a></li>	
+				<li><a href="4-5.jpg" rel="external"><img src="4_5.jpeg" /></a></li>
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>독도사랑_홍길동</h1>
+		</div>		
+	</div>
+</div>	
+</body>
 </html>
