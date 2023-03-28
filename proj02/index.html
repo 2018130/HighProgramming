@@ -1,0 +1,141 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<script>
+		$("#body").load(url, function () {
+				$(this).trigger('create')
+			});
+    </script>
+	<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css"/>
+	<script src="./js/jquery-1.11.1.min.js"></script>
+	<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>부산 소개 앱</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="bgbusan1.jpeg" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">부산소개</a></li>
+				<li><a href="#movie" data-rel="dialog">부산영상</a></li>
+				<li><a href="#wizard3-1" data-rel="dialog">부산음악</a></li>
+				<li><a href="#gallery">부산사진</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>부산사랑_송준엽</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>부산 소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="bgbusan2.jpeg">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>부산역사</h3>
+					<p>부산광역시(釜山廣域市)는 대한민국 제 2의 도시로, 현재의 규모와 명성을 갖추게 된 것은 비교적 최근의 일이다. 삼한 시대 변한의 거칠산국의 작은 고을로 시작하여  ..생략</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>부산지리</h3>
+					<p>부산광역시는 동쪽으로는 동해에 접하고 서쪽으로 경상남도 창원시 진해구, 김해시와 접하고 있으며, 남쪽으로는 거제시와 남해에 접하며 북쪽으로 울산  ..생략</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>부산정보</h3>
+					<p>대한민국의 광역시. 한국 최대의 항구를 보유하고 있고 전국에서 2번째로 인구가 많다. 인구는 3,316,107명[17]으로 모든 광역시 중 외국인을 제외해도 유일한 300만 명대 도시이다. 모든 광역자치단체를 다
+					합치면 경기도-서울특별시 다음 3위. 광역자치단체들 중 인구 밀도도 서울에 이어 2위이다  ..생략</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>부산사랑_송준엽</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>부산 영상</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-a">부산 소개 동영상</div><br/>
+			<li><iframe width="100%" height="240" src="https://www.youtube.com/embed/pRy1_vBeQmY"></iframe></li><br/>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+	
+	<div data-role="page" id="wizard3-1">
+		<div data-role="header">
+			<h1>부산 노래1</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">부산 바캉스</div><br/>
+			<audio controls width="100%" preload="metadata">
+				<source src="busanVacance.mp3" type="audio/mp3">
+			</audio>	
+			<img src="3_1.jpeg" alt="" width="100%">
+		</div>
+		<div data-role="footer">
+			<a href="#home"  data-direction="reverse">이전</a>
+			<a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="wizard3-2">
+		<div data-role="header">
+			<h1>부산 노래2</h1>
+		</div>
+		<div data-role="content">
+			<div class="ui-bar ui-bar-e">해운대</div><br/>
+			<audio controls width="100%" preload="metadata">
+				<source src="haeundae.mp3" type="audio/mp3">
+			</audio>			
+			<img src="3_2.jpeg" alt="" width="100%">
+		</div>
+		<div data-role="footer">
+			<a href="#wizard3-1"  data-direction="reverse">이전</a>
+			<a href="#home">처음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>부산 갤러리</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="4-1.jpg" rel="external"><img src="4_1.jpeg" /></a></li>	
+				<li><a href="4-2.jpg" rel="external"><img src="4_2.jpeg" /></a></li>	
+				<li><a href="4-3.jpg" rel="external"><img src="4_3.jpeg" /></a></li>	
+				<li><a href="4-4.jpg" rel="external"><img src="4_4.jpeg" /></a></li>	
+				<li><a href="4-5.jpg" rel="external"><img src="4_5.jpeg" /></a></li>
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>독도사랑_홍길동</h1>
+		</div>		
+	</div>
+</div>	
+</body>
+</html>

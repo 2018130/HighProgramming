@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 개인 포트폴리오 홈페이지</title>
+    <style>
+        .header {
+            background-image: url("./bg.jpg");
+        }
+
+        ul {
+            list-style: none;
+        }
+    </style>
+    <script>
+        /*
+        $(document).ready(function () {
+            $('a[href^="http://"]').each(function () {
+                var oldUrl = $(this).attr("href"); // Get current url
+                var newUrl = oldUrl.replace("http://", "https://"); // Create new url
+                $(this).attr("href", newUrl); // Set herf value
+            });
+        });*/
+    </script>
+
+    <link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css" />
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="h1">
+        <div data-role="header" data-theme="b" class="header">
+            <h1>송준엽 홈페이지</h1>
+        </div>
+        <div data-role="content" style="text-align:center">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#h1" class="ui-btn-active">경력</a></li>
+                    <li><a href="#h2">학술</a></li>
+                    <li><a href="#h3">인적</a></li>
+                    <li><a href="#h4">소개</a></li>
+                </ul>
+            </div>
+            <section class="section1">
+                <h3>게임 프로젝트</h3>
+                <ul>
+                    <li>2022-11-28~ 최초 개발 시작</li>
+                    <li>2023-02-04~ 구글 드라이브 문서 작성 시작</li>
+                </ul>
+                <div id="pic-container">
+                    <img id="pic1" style="width:300px; height:400px;" class="semi-pic" src="gameMainScreen.jpg" />
+                    <img id="pic2" style="width:400px; height:300px;" class="semi-pic" src="googleDrive.png" />
+                </div>
+                <h3>봉사</h3>
+                <ul>
+                    <li>2023-03-17 홀로 어르신 댁 방문 후 폼롤러 사용법 안내</li>
+                </ul>
+            </section>
+            <h3>참조링크</h3>
+            <a href="http://www.google.com">
+                <img class="portal" src="naver.jpg" alt="네이버이동" />
+            </a>
+            <a href="http://www.google.com">
+                <img class="portal" src="google.jpg" alt="구글이동" />
+            </a>
+            <a href="http://www.daum.net">
+                <img class="portal" src="daum.jpg" alt="다음이동" />
+            </a>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h1></h1>
+        </div>
+    </div>
+    <div data-role="page" id="h2">
+        <div data-role="header" data-theme="b" class="header">
+            <h1>송준엽 홈페이지</h1>
+        </div>
+        <div data-role="content" style="text-align:center">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#h1">경력</a></li>
+                    <li><a href="#h2" class="ui-btn-active">학술</a></li>
+                    <li><a href="#h3">인적</a></li>
+                    <li><a href="#h4">소개</a></li>
+                </ul>
+            </div>
+            <div id="mainContents">
+                <h3>게임 프로젝트</h3>
+                <ul>
+                    <li>플레이 영상</li>
+                </ul>
+                <video height="180" width="288" autoplay controls preload="metadata">
+                    <source src="video.ogv" type="video/ogv">
+                    </source>
+                    <source src="video.mp4" type="video/mp4">
+                    </source>
+                    <source src="video.webm" type="video/webm">
+                    </source>
+                    브라우저에서 비디오 파일을 지원하지 않습니다.
+                    <br />
+                </video>
+            </div>
+            <h3>참조링크</h3>
+            <a href="http://www.google.com">
+                <img class="portal" src="naver.jpg" alt="네이버이동" />
+            </a>
+            <a href="http://www.google.com">
+                <img class="portal" src="google.jpg" alt="구글이동" />
+            </a>
+            <a href="http://www.daum.net">
+                <img class="portal" src="daum.jpg" alt="다음이동" />
+            </a>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h1></h1>
+        </div>
+    </div>
+    <div data-role="page" id="h3">
+        <div data-role="header" data-theme="b" class="header">
+            <h1>송준엽 홈페이지</h1>
+        </div>
+        <div data-role="content" style="text-align:center">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#h1">경력</a></li>
+                    <li><a href="#h2">학술</a></li>
+                    <li><a href="#h3" class="ui-btn-active">인적</a></li>
+                    <li><a href="#h4">소개</a></li>
+                </ul>
+            </div>
+            <section class="section1">
+                <h3>인적사항</h3>
+                <ul>
+                    <li>성 명 : 송준엽</li>
+                    <li>생년월일 : 2000. 02. 16</li>
+                    <li>주 소 : 부산시 동구 초량동</li>
+                    <li>연 락 처 : 010-6676-2016</li>
+                    <li>
+                        학 력
+                        <table id="year-table" border="1">
+                            <thead>
+                                <tr>
+                                    <th>졸업년도</th>
+                                    <th>출신학교</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2012. 2</td>
+                                    <td> 동일중앙초등학교 졸업</td>
+                                </tr>
+                                <tr>
+                                    <td>2015. 2.</td>
+                                    <td> 부산중학교 졸업</td>
+                                </tr>
+                                <tr>
+                                    <td>2018. 2.</td>
+                                    <td> 부산고등학교 졸업</td>
+                                </tr>
+                                <tr>
+                                    <td>2018. 3.</td>
+                                    <td> 경성대학교 컴퓨터학과 입학</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <h3>참조링크</h3>
+        <a href="http://www.google.com">
+            <img class="portal" src="naver.jpg" alt="네이버이동" />
+        </a>
+        <a href="http://www.google.com">
+            <img class="portal" src="google.jpg" alt="구글이동" />
+        </a>
+        <a href="http://www.daum.net">
+            <img class="portal" src="daum.jpg" alt="다음이동" />
+        </a>
+    </div>
+    <div data-role="page" id="h4">
+        <div data-role="header" data-theme="b" class="header">
+            <h1>송준엽 홈페이지</h1>
+        </div>
+        <div data-role="content" style="text-align:center">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#h1">경력</a></li>
+                    <li><a href="#h2">학술</a></li>
+                    <li><a href="#h3">인적</a></li>
+                    <li><a href="#h4" class="ui-btn-active">소개</a></li>
+                </ul>
+            </div>
+            <h3>자기소개</h3>
+            <img id="stu-pic" src="stu.jpg" />
+            <p>
+                저는 경성대학교 소프트웨어학과를 졸업하고 게임 관련 분야에 관심을 갖고 있는 송준엽입니다. 평소 프로그래밍을 즐겨하였고 특히, 게임엔진 관련하여
+                유니티 및 언리얼 엔진을 이용한 개발 경험도 있습니다. 모바일 게임 관련 빌드 및 구동 경험이 있습니다. 항상 어떤 환경에서도 최선을 다하고 즐기는 마음으로 열심히 일하고자 합니다.
+            </p>
+            <h3>참조링크</h3>
+            <a href="http://www.google.com">
+                <img class="portal" src="naver.jpg" alt="네이버이동" />
+            </a>
+            <a href="http://www.google.com">
+                <img class="portal" src="google.jpg" alt="구글이동" />
+            </a>
+            <a href="http://www.daum.net">
+                <img class="portal" src="daum.jpg" alt="다음이동" />
+            </a>
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h1></h1>
+        </div>
+    </div>
+    <footer>
+        <h2>Copyright &copy; 2014 Hong, GilDong </h2>
+    </footer>
+</body>
+
+</html>
